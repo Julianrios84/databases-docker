@@ -4,7 +4,7 @@
 /opt/mssql/bin/sqlservr &
 
 # Start the script to create the DB and user
-/usr/config/configure-db.sh
+/usr/src/app/configure-db.sh
 
 # Call extra command
 eval $1

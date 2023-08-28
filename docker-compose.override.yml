@@ -81,6 +81,6 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1GB
+          memory: 2GB
     networks:
       - curriculum
