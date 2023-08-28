@@ -71,3 +71,16 @@ services:
           memory: 0.5GB
     networks:
       - curriculum
+
+  mssqldb:
+    restart: always
+    ports:
+      - "1433:1433"
+    volumes:
+      - $PWD/mssql:/var/opt/mssql/data
+    deploy:
+      resources:
+        limits:
+          memory: 1GB
+    networks:
+      - curriculum

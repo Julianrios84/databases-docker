@@ -21,6 +21,15 @@ services:
     container_name: postgresdb
     image: postgres:14.2
     env_file: ./env/postgres/.env
+
+  mssqldb:
+    container_name: mssqldb
+    image: technicaltest/database/mssqldb
+    env_file: ./env/mssql/.env
+    build:
+      context: ./config/mssql
+      dockerfile: dockerfile
+   
     
 
 networks:

@@ -1,3 +1,4 @@
-mongo
-mysql
-postgres
+/mongo
+/mysql
+/postgres
+/mssql
